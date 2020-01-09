@@ -1,48 +1,58 @@
-<?xml version="1.0" encoding="UTF-8"?>  
+<?xml version="1.0" encoding="UTF-8"?>
 <!-- Edited with XML Spy v2007 (http://www.altova.com) -->  
-<?xml-stylesheet type="text/xsl" href="gs_request.xslt"?>  
 <VendorRequest>
-<User>admin</User>
-<Requestor>admin</Requestor>
-<UserRequestID>
-</UserRequestID>
-<Universe>
-</Universe>
-<ScheduleTimezone>London</ScheduleTimezone>
-<Request>
-<RequestType>ReutersDSS_Pricing_History</RequestType>
-<Vendor>REUTERS</Vendor>
-<TableType>ISSU</TableType>
-<Identifier>RUB2YNDF=GFIR</Identifier>
-<IDContext>RIC</IDContext>
-<OID>=00000040F</OID>
-<UserDefinedIdentifier>++6mmkZGecBT0003</UserDefinedIdentifier>
-</Request>
-<Request>
-<RequestType>ReutersDSS_Pricing_History</RequestType>
-<Vendor>REUTERS</Vendor>
-<TableType>ISSU</TableType>
-<Identifier>NZDTN=ICAA</Identifier>
-<IDContext>RIC</IDContext>
-<OID>=000000410</OID>
-<UserDefinedIdentifier>++6mmkZGecBT0003</UserDefinedIdentifier>
-</Request>
-<Request>
-<RequestType>ReutersDSS_Pricing_History</RequestType>
-<Vendor>REUTERS</Vendor>
-<TableType>ISSU</TableType>
-<Identifier>NZD6M=ICAA</Identifier>
-<IDContext>RIC</IDContext>
-<OID>=000000411</OID>
-<UserDefinedIdentifier>++6mmkZGecBT0003</UserDefinedIdentifier>
-</Request>
-<Request>
-<RequestType>ReutersDSS_Pricing_History</RequestType>
-<Vendor>REUTERS</Vendor>
-<TableType>ISSU</TableType>
-<Identifier>NZD=</Identifier>
-<IDContext>RIC</IDContext>
-<OID>=000000412</OID>
-<UserDefinedIdentifier>++6mmkZGecBT0003</UserDefinedIdentifier>
-</Request>
+	<User>admin</User>
+	<Requestor>admin</Requestor>
+	<UserRequestID>
+	</UserRequestID>
+	<Universe>
+	</Universe>
+	<QueryStartDate>2020-01-02</QueryStartDate>
+	<QueryEndDate>2020-01-09</QueryEndDate>
+	<PriceType>
+		<Type>Ask Price</Type>
+	</PriceType>
+	<PriceType>
+		<Type>Bid Price</Type>
+	</PriceType>
+	<PriceType>
+		<Type>Mid Price</Type>
+	</PriceType>
+	<ScheduleTimezone>London</ScheduleTimezone>
+	<Request>
+		<RequestType>ReutersDSS_Pricing_History</RequestType>
+		<Vendor>REUTERS</Vendor>
+		<TableType>ISSU</TableType>
+		<Identifier>RUB2YNDF=GFIR</Identifier>
+		<IDContext>RIC</IDContext>
+		<OID>=00000040F</OID>
+		<UserDefinedIdentifier>++6mmkZGecBT0003</UserDefinedIdentifier>
+	</Request>
+	<Request>
+		<RequestType>ReutersDSS_Pricing_History</RequestType>
+		<Vendor>REUTERS</Vendor>
+		<TableType>ISSU</TableType>
+		<Identifier>NZDTN=ICAA</Identifier>
+		<IDContext>RIC</IDContext>
+		<OID>=000000410</OID>
+		<UserDefinedIdentifier>++6mmkZGecBT0003</UserDefinedIdentifier>
+	</Request>
+	<Request>
+		<RequestType>ReutersDSS_Pricing_History</RequestType>
+		<Vendor>REUTERS</Vendor>
+		<TableType>ISSU</TableType>
+		<Identifier>NZD6M=ICAA</Identifier>
+		<IDContext>RIC</IDContext>
+		<OID>=000000411</OID>
+		<UserDefinedIdentifier>++6mmkZGecBT0003</UserDefinedIdentifier>
+	</Request>
+	<Request>
+		<RequestType>ReutersDSS_Pricing_History</RequestType>
+		<Vendor>REUTERS</Vendor>
+		<TableType>ISSU</TableType>
+		<Identifier>NZD=</Identifier>
+		<IDContext>RIC</IDContext>
+		<OID>=000000412</OID>
+		<UserDefinedIdentifier>++6mmkZGecBT0003</UserDefinedIdentifier>
+	</Request>
 </VendorRequest>
