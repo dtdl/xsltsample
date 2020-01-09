@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportRequest xmlns="http://www.reuters.com/Datascope/ReportRequest.xsd">
+<ReportTemplate version="2">
+  <ReportAction>Replace</ReportAction>
+  <Name>RMTest2</Name>
+  <TemplateType>PriceHistory</TemplateType>
+  <OutputFormat>CSV</OutputFormat>
+  <Delimiter>None</Delimiter>
+  <Delivery>None</Delivery>
+  <Compression>None</Compression>
+  <ColumnHeaders>Yes</ColumnHeaders>
+  <Conditions>
+    <BoolCondition>
+      <Name>AdjustedPrices</Name>
+      <Value>Yes</Value>
+    </BoolCondition>
+    <BoolCondition>
+      <Name>LastEntityOnly</Name>
+      <Value>Yes</Value>
+    </BoolCondition>
+    <DateCondition>
+      <Name>QueryEndDate</Name>
+      <Value>2019-01-09</Value>
+    </DateCondition>
+    <DateCondition>
+      <Name>QueryStartDate</Name>
+      <Value>2019-01-02</Value>
+    </DateCondition>
+    <SingleSelectionCondition>
+      <Name>ReportDateRangeType</Name>
+      <Value>Range</Value>
+    </SingleSelectionCondition>
+  </Conditions>
+  <Body>
+    <NumericDataField>
+      <Name>Ask Price</Name>
+      <FieldNumber>0</FieldNumber>
+      <DataFieldType>Numeric</DataFieldType>
+      <Justification>Left</Justification>
+      <Width>28</Width>
+      <WidthStyle>Variable</WidthStyle>
+      <DecimalPlaces>9</DecimalPlaces>
+      <DecimalSeparator>Period</DecimalSeparator>
+      <IntegerPlaces>18</IntegerPlaces>
+      <LeadingZeroes>No</LeadingZeroes>
+      <TrailingZeroes>No</TrailingZeroes>
+      <ThousandSeparator>No</ThousandSeparator>
+      <ThousandCharacter>Comma</ThousandCharacter>
+      <NegativePosition>Before</NegativePosition>
+    </NumericDataField>
+    <NumericDataField>
+      <Name>Bid Price</Name>
+      <FieldNumber>1</FieldNumber>
+      <DataFieldType>Numeric</DataFieldType>
+      <Justification>Left</Justification>
+      <Width>28</Width>
+      <WidthStyle>Variable</WidthStyle>
+      <DecimalPlaces>9</DecimalPlaces>
+      <DecimalSeparator>Period</DecimalSeparator>
+      <IntegerPlaces>18</IntegerPlaces>
+      <LeadingZeroes>No</LeadingZeroes>
+      <TrailingZeroes>No</TrailingZeroes>
+      <ThousandSeparator>No</ThousandSeparator>
+      <ThousandCharacter>Comma</ThousandCharacter>
+      <NegativePosition>Before</NegativePosition>
+    </NumericDataField>
+    <NumericDataField>
+      <Name>Mid Price</Name>
+      <FieldNumber>2</FieldNumber>
+      <DataFieldType>Numeric</DataFieldType>
+      <Justification>Left</Justification>
+      <Width>28</Width>
+      <WidthStyle>Variable</WidthStyle>
+      <DecimalPlaces>9</DecimalPlaces>
+      <DecimalSeparator>Period</DecimalSeparator>
+      <IntegerPlaces>18</IntegerPlaces>
+      <LeadingZeroes>No</LeadingZeroes>
+      <TrailingZeroes>No</TrailingZeroes>
+      <ThousandSeparator>No</ThousandSeparator>
+      <ThousandCharacter>Comma</ThousandCharacter>
+      <NegativePosition>Before</NegativePosition>
+    </NumericDataField>
+    <TextDataField>
+      <Name>RIC</Name>
+      <FieldNumber>3</FieldNumber>
+      <DataFieldType>Text</DataFieldType>
+      <Justification>Left</Justification>
+      <WidthStyle>Variable</WidthStyle>
+      <Capitalization>None</Capitalization>
+    </TextDataField>
+    <DateDataField>
+      <Name>Trade Date</Name>
+      <FieldNumber>4</FieldNumber>
+      <DataFieldType>Date</DataFieldType>
+      <Justification>Left</Justification>
+      <WidthStyle>Variable</WidthStyle>
+      <DateFormat>dd/MM/yyyy</DateFormat>
+    </DateDataField>
+    <NumericDataField>
+      <Name>Last Trade Price</Name>
+      <FieldNumber>5</FieldNumber>
+      <DataFieldType>Numeric</DataFieldType>
+      <Justification>Left</Justification>
+      <Width>28</Width>
+      <WidthStyle>Variable</WidthStyle>
+      <DecimalPlaces>9</DecimalPlaces>
+      <DecimalSeparator>Period</DecimalSeparator>
+      <IntegerPlaces>18</IntegerPlaces>
+      <LeadingZeroes>No</LeadingZeroes>
+      <TrailingZeroes>No</TrailingZeroes>
+      <ThousandSeparator>No</ThousandSeparator>
+      <ThousandCharacter>Comma</ThousandCharacter>
+      <NegativePosition>Before</NegativePosition>
+    </NumericDataField>
+  </Body>
+</ReportTemplate>
+
+<InputList>
+<InputListAction>Replace</InputListAction>
+<Name>RMTest2</Name>
+<Instrument>
+<IdentifierType>RIC</IdentifierType>
+<Identifier>HIHKD1WD=</Identifier>
+<UserDefinedIdentifier>=0044F9B0A</UserDefinedIdentifier>
+</Instrument>
+<Instrument>
+<IdentifierType>RIC</IdentifierType>
+<Identifier>HICNH1WDF=</Identifier>
+<UserDefinedIdentifier>=0044F9B1C</UserDefinedIdentifier>
+</Instrument>
+</InputList>
+<Schedule>
+<ScheduleAction>Replace</ScheduleAction>
+<Name>RMTest2</Name>
+<IntradayPricingSchedule>
+<InputListName>RMTest2</InputListName>
+<ReportTemplateName>RMTest2</ReportTemplateName>
+<OutputFileName>RMTest2%D.csv</OutputFileName>
+<ScheduleTimezone>AUS Eastern Standard Time</ScheduleTimezone>
+<ScheduleWeekly>
+<DayOfWeek>Monday</DayOfWeek>
+<DayOfWeek>Tuesday</DayOfWeek>
+<DayOfWeek>Wednesday</DayOfWeek>
+<DayOfWeek>Thursday</DayOfWeek>
+<DayOfWeek>Friday</DayOfWeek>
+<Type>LU</Type>
+</ScheduleWeekly>
+<ScheduleTime>
+<Hour>13</Hour>
+<Minute>30</Minute>
+</ScheduleTime>
+</IntradayPricingSchedule>
+</Schedule>
+</ReportRequest>
